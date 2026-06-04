@@ -42,4 +42,4 @@ These services strongly indicated an Active Directory environment.
 
 ### Screenshot
 
-![Nmap]([screenshots/01_nmap.png](https://github.com/abhijith-sec/Attacktive-Directory-THM/blob/main/screenshots/01_nmap.png) ,screenshots/02_nmap.png)
+![Nmap]([screenshots/01_nmap.png](https://github.com/abhijith-sec/Attacktive-Directory-THM/blob/main/screenshots/01_nmap.png) ,[screenshots/02_nmap.png](https://github.com/abhijith-sec/Attacktive-Directory-THM/blob/main/screenshots/02_nmap.png))
