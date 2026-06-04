@@ -25,7 +25,7 @@ Identify exposed services and determine whether the target is an Active Director
 ### Command
 
 ```bash
-nmap -sC -sV <target-ip>
+nmap -A <target-ip>
 ```
 
 ### Findings
@@ -35,6 +35,7 @@ Observed services:
 - Kerberos (88)
 - LDAP (389)
 - SMB (445)
+- SMB (139)
 - DNS (53)
 
 These services strongly indicated an Active Directory environment.
