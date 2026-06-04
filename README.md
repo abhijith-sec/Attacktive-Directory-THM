@@ -42,4 +42,4 @@ These services strongly indicated an Active Directory environment.
 
 ### Screenshot
 
-![Nmap](screenshots/01_nmap.png)
+![Nmap](screenshots/01_nmap.png ,screenshots/02_nmap.png)
