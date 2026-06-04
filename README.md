@@ -44,3 +44,45 @@ These services strongly indicated an Active Directory environment.
 
 ![Nmap](https://github.com/abhijith-sec/Attacktive-Directory-THM/blob/main/screenshots/01_nmap.png) 
 ![Nmap](https://github.com/abhijith-sec/Attacktive-Directory-THM/blob/main/screenshots/02_nmap.png))
+
+## Step 2 - Host Resolution Configuration
+
+### Objective
+
+Configure local hostname resolution to ensure Active Directory and Kerberos tools can correctly communicate with the target domain.
+
+### Enumeration Findings
+
+During service enumeration, Nmap revealed:
+
+```text
+DNS_Domain_Name: spookysec.local
+DNS_Computer_Name: AttacktiveDirectory.spookysec.local
+```
+
+### Command
+
+```bash
+sudo nano /etc/hosts
+```
+
+### Entry Added
+
+```text
+10.48.182.217 spookysec.local AttacktiveDirectory.spookysec.local
+```
+
+### Verification
+
+```bash
+ping spookysec.local
+```
+
+### Why This Was Necessary
+
+Many Active Directory tools, including Kerberos and Impacket utilities, rely on proper DNS resolution. Adding the domain information to `/etc/hosts` ensured that the attack machine could correctly resolve the domain controller hostname and communicate with domain services.
+
+### Result
+
+The domain `spookysec.local` successfully resolved to the target IP address, enabling further Active Directory enumeration.
+
