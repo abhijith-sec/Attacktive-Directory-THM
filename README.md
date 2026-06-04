@@ -16,3 +16,29 @@ Attacktive Directory is an Active Directory focused TryHackMe room that introduc
 7. Domain Resource Access
 
 ---
+## Step 1 - Service Enumeration
+
+### Objective
+
+Identify exposed services and determine whether the target is an Active Directory Domain Controller.
+
+### Command
+
+```bash
+nmap -sC -sV <target-ip>
+```
+
+### Findings
+
+Observed services:
+
+- Kerberos (88)
+- LDAP (389)
+- SMB (445)
+- DNS (53)
+
+These services strongly indicated an Active Directory environment.
+
+### Screenshot
+
+![Nmap](screenshots/01_nmap.png)
